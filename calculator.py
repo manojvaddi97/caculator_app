@@ -17,9 +17,12 @@ def divide(x, y):
 
 def modulus(x, y):
     return x % y
+<<<<<<< HEAD
 
 def percentage(x, y):
     return (x / y) * 100
+=======
+>>>>>>> 9030fd5 (adding modulus feature)
 
 print("Select operation:")
 print("1. Addition")
@@ -27,12 +30,21 @@ print("2. Subtraction")
 print("3. Multiplication")
 print("4. Division")
 print("5. Modulus")
+<<<<<<< HEAD
 print("6. Percentage")
 
 while True:
     choice = input("Enter choice (1/2/3/4/5/6): ")
 
     if choice in ('1', '2', '3', '4', '5', '6'):
+=======
+
+
+while True:
+    choice = input("Enter choice (1/2/3/4/5): ")
+
+    if choice in ('1', '2', '3', '4', '5'):
+>>>>>>> 9030fd5 (adding modulus feature)
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -46,8 +58,12 @@ while True:
             print("Result:", divide(num1, num2))
         elif choice == '5':
             print("Result:", modulus(num1, num2))
+<<<<<<< HEAD
         elif choice == '6':
             print("Result:", percentage(num1, num2))
+=======
+        
+>>>>>>> 9030fd5 (adding modulus feature)
         
         next_calculation = input("Perform another calculation? (yes/no): ")
         if next_calculation.lower() != 'yes':
