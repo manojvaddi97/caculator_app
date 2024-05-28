@@ -18,21 +18,12 @@ def divide(x, y):
 def modulus(x, y):
     return x % y
 
-<<<<<<< HEAD
-
-def percentage(x, y):
-    return (x / y) * 100
-=======
 def percentage(num1, num2):
     try:
         percentage = (num1 / num2) * 100
         return percentage
     except ZeroDivisionError:
         return "Error: Division by zero is not allowed."
-
-
->>>>>>> percentage
-
 
 print("Select operation:")
 print("1. Addition")
