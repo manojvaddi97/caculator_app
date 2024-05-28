@@ -18,9 +18,20 @@ def divide(x, y):
 def modulus(x, y):
     return x % y
 
+<<<<<<< HEAD
 
 def percentage(x, y):
     return (x / y) * 100
+=======
+def percentage(num1, num2):
+    try:
+        percentage = (num1 / num2) * 100
+        return percentage
+    except ZeroDivisionError:
+        return "Error: Division by zero is not allowed."
+
+
+>>>>>>> percentage
 
 
 print("Select operation:")
@@ -49,7 +60,8 @@ while True:
         elif choice == '5':
             print("Result:", modulus(num1, num2))
         elif choice == '6':
-            print("Result:", percentage(num1, num2))
+            result = percentage(num1, num2)
+            print(f"The percentage of {num1} relative to {num2} is {result}%")
         
         next_calculation = input("Perform another calculation? (yes/no): ")
         if next_calculation.lower() != 'yes':
